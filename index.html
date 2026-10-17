@@ -3,10 +3,32 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ติดต่อเรา | Merit Property</title>
-  <meta name="description" content="ปรึกษาเรื่องขายบ้านหรือคอนโดกับ Merit Property บริการถ่ายภาพและลงประกาศขายอสังหาฯ ในกรุงเทพฯ ครอบคลุม 12 ทำเลหลัก" />
+  <title>Merit Property | ถ่ายภาพและลงประกาศขาย-เช่า อสังหาฯ กรุงเทพฯ</title>
+  <meta name="description" content="Merit Property ตัวแทนอสังหาฯ ที่ดูแลจริง บริการถ่ายภาพมืออาชีพและลงประกาศขาย-เช่า บ้านและคอนโด ครอบคลุม 12 ทำเลหลักทั่วกรุงเทพฯ" />
   <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-  <style>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <nav>
+        <a href="index.html" class="logo">Merit<b>Property</b></a>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="about.html">เกี่ยวกับเรา</a></li>
+          <li><a href="services.html">บริการของเรา</a></li>
+          <li><a href="portfolio.html">ผลงานของเรา</a></li>
+          <li><a href="contact.html">ติดต่อเรา</a></li>
+        </ul>
+        <div class="nav-actions">
+          <a class="btn btn-outline js-tel">โทร <span class="js-phone"></span></a>
+          <a href="contact.html#contact-form" class="btn btn-primary">จองบริการ</a>
+          <button class="menu-toggle" id="menuToggle" aria-label="เมนู">☰</button>
+        </div>
+      </nav>
+    </div>
+  </header>
+<style>
     :root{
       --primary:#0f2c4c; --primary-dark:#0a1f36; --accent:#c9a24a; --accent-dark:#b08a35;
       --light:#f6f7f9; --text:#333; --muted:#6b7280; --white:#fff;
@@ -138,108 +160,118 @@
       .nav-actions .btn{padding:9px 16px;font-size:.88rem}
     }
   </style>
-</head>
-<body>
-
-  <!-- ===== Header ===== -->
-  <header>
-    <div class="container">
-      <nav>
-        <a href="index.html" class="logo">Merit<b>Property</b></a>
-        <!-- ถ้ามีไฟล์โลโก้: <a href="index.html"><img src="logo.png" alt="Merit Property" height="44"></a> -->
-        <ul class="nav-links" id="navLinks">
-          <li><a href="about.html">เกี่ยวกับเรา</a></li>
-          <li><a href="services.html">บริการของเรา</a></li>
-          <li><a href="portfolio.html">ผลงานของเรา</a></li>
-          <li><a href="contact.html" class="active">ติดต่อเรา</a></li>
-        </ul>
-        <div class="nav-actions">
-          <a class="btn btn-outline js-tel">โทร <span class="js-phone"></span></a>
-          <a href="#contact-form" class="btn btn-primary">จองบริการ</a>
-          <button class="menu-toggle" id="menuToggle" aria-label="เมนู">☰</button>
-        </div>
-      </nav>
-    </div>
-  </header>
-
   <!-- ===== Hero ===== -->
-  <section class="hero">
+  <section class="home-hero">
     <div class="container">
-      <span class="eyebrow">ติดต่อเรา</span>
-      <h1>ปรึกษาเรื่องขายบ้านหรือคอนโดของคุณได้เลย</h1>
-      <p>
-        โทร <a class="js-tel"><span class="js-phone"></span></a>
-        หรือไลน์หาเราที่ <a class="js-line" target="_blank" rel="noopener">id line0892029776</a>
-        เพื่อพูดคุยเรื่องการถ่ายภาพและลงประกาศขายอสังหาฯ ในกรุงเทพฯ เราตอบกลับภายในวันทำการ
-      </p>
-      <div class="hero-buttons">
-        <a class="btn btn-primary js-tel">📞 โทรหาเรา</a>
-        <a class="btn btn-light js-line" target="_blank" rel="noopener">💬 แอดไลน์</a>
+      <div class="content">
+        <span class="eyebrow">ตัวแทนอสังหาฯ กรุงเทพฯ</span>
+        <h1>ขายบ้านและคอนโดให้ไว<br />ด้วย<span>ภาพที่ขายได้จริง</span></h1>
+        <p>Merit Property ดูแลตั้งแต่ถ่ายภาพมืออาชีพ เขียนรายละเอียดประกาศ จนถึงหาผู้ซื้อและผู้เช่า ครอบคลุม 12 ทำเลหลักทั่วกรุงเทพฯ</p>
+        <div class="hero-buttons">
+          <a href="contact.html#contact-form" class="btn btn-primary">ปรึกษาฟรี</a>
+          <a href="portfolio.html" class="btn btn-light">ดูผลงานของเรา</a>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- ===== Contact + Form ===== -->
-  <section id="contact-form">
-    <div class="container contact-wrap">
-      <div class="contact-text">
-        <span class="eyebrow">ติดต่อ Merit Property</span>
-        <h2>พูดคุยกับตัวแทนอสังหาฯ ที่ดูแลจริง</h2>
-        <p>ส่งรายละเอียดทรัพย์สินของคุณมา แล้วเราจะติดต่อกลับเพื่อให้คำปรึกษาเรื่องการถ่ายภาพและรายละเอียดประกาศขายที่ตรงจุด</p>
+  <!-- ===== Stats (ใส่ตัวเลขจริง) ===== -->
+  <section style="padding:60px 0">
+    <div class="container stats">
+      <div class="stat"><b>12</b><span>ทำเลหลักในกรุงเทพฯ</span></div>
+      <div class="stat"><b>[X]+</b><span>ยูนิตที่ถ่ายภาพและลงประกาศ</span></div>
+      <div class="stat"><b>[X]+</b><span>ลูกค้าที่ไว้วางใจ</span></div>
+      <div class="stat"><b>1 วัน</b><span>ตอบกลับภายในวันทำการ</span></div>
+    </div>
+  </section>
 
-        <div class="info-item"><div class="ic">✉️</div><div><small>อีเมล</small><a class="js-mail"><span class="js-email"></span></a></div></div>
-        <div class="info-item"><div class="ic">📞</div><div><small>โทรศัพท์</small><a class="js-tel"><span class="js-phone"></span></a></div></div>
-        <div class="info-item"><div class="ic">📍</div><div><small>ที่อยู่</small>Ocean Tower , Khlong Toei, Bangkok</div></div>
-        <div class="info-item"><div class="ic">🕘</div><div><small>เวลาทำการ</small>จันทร์–เสาร์ 9:00 – 18:00 น.</div></div>
-
-        <div class="map">
-          <iframe src="https://www.google.com/maps?q=Ocean+Tower+1,+Khlong+Toei,+Bangkok&output=embed" loading="lazy" title="แผนที่ Merit Property"></iframe>
+  <!-- ===== Services ===== -->
+  <section class="bg-light">
+    <div class="container">
+      <div class="section-title">
+        <span class="eyebrow">บริการของเรา</span>
+        <h2>ครบทุกขั้นตอน ตั้งแต่ถ่ายภาพจนปิดการขาย</h2>
+        <p>คุณบอกเป้าหมาย เราจัดการส่วนที่เหลือให้</p>
+      </div>
+      <div class="grid">
+        <div class="card">
+          <div class="icon">📸</div>
+          <h3>ถ่ายภาพมืออาชีพ</h3>
+          <p>จัดแสงและมุมกล้องให้ห้องดูกว้าง สว่าง และน่าอยู่ ช่วยให้ประกาศโดดเด่นกว่าคู่แข่ง</p>
+        </div>
+        <div class="card">
+          <div class="icon">📝</div>
+          <h3>ลงประกาศขายและเช่า</h3>
+          <p>เขียนรายละเอียดตรงจุด แล้วลงประกาศในช่องทางที่ผู้ซื้อและผู้เช่าค้นหาจริง</p>
+        </div>
+        <div class="card">
+          <div class="icon">🤝</div>
+          <h3>ดูแลจนปิดดีล</h3>
+          <p>คัดกรองผู้สนใจ นัดชมห้อง ต่อรอง และช่วยดูแลเอกสารจนถึงวันโอน</p>
         </div>
       </div>
+      <div class="center"><a href="services.html" class="btn btn-outline">ดูบริการทั้งหมด</a></div>
+    </div>
+  </section>
 
-      <form class="contact-form" id="contactForm">
-        <div class="form-group">
-          <label for="name">ชื่อ <span class="req">*</span></label>
-          <input type="text" id="name" name="ชื่อ" required />
+  <!-- ===== Why Us ===== -->
+  <section>
+    <div class="container split">
+      <img src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1000" alt="ภาพถ่ายห้องคอนโดโดย Merit Property" loading="lazy" />
+      <div>
+        <span class="eyebrow">ทำไมต้อง Merit Property</span>
+        <h2>คุยกับตัวแทนที่ดูแลจริง ไม่ใช่แค่ฝากประกาศ</h2>
+        <p>เราเชื่อว่าภาพที่ดีและข้อมูลที่ชัดเจน คือจุดเริ่มต้นของการขายที่รวดเร็ว ทุกยูนิตจึงได้รับการถ่ายภาพและลงรายละเอียดครบ</p>
+        <ul class="check-list">
+          <li>ถ่ายภาพทุกยูนิตโดยทีมงานของเราเอง</li>
+          <li>เชี่ยวชาญ 12 ทำเลหลัก ตั้งแต่สุขุมวิท อโศก ถึงพระราม 3</li>
+          <li>ตอบกลับภายในวันทำการ ไม่ทิ้งงาน</li>
+          <li>โทรปรึกษาก่อนได้ ไม่มีข้อผูกมัด</li>
+        </ul>
+        <a href="about.html" class="btn btn-primary">รู้จักเรามากขึ้น</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Steps ===== -->
+  <section class="bg-light">
+    <div class="container">
+      <div class="section-title">
+        <span class="eyebrow">ขั้นตอนการทำงาน</span>
+        <h2>เริ่มง่าย ๆ ใน 4 ขั้นตอน</h2>
+      </div>
+      <div class="steps">
+        <div class="step"><h3>ติดต่อเรา</h3><p>โทร ไลน์ หรือกรอกฟอร์ม บอกรายละเอียดทรัพย์และเป้าหมายของคุณ</p></div>
+        <div class="step"><h3>นัดถ่ายภาพ</h3><p>ทีมงานเข้าถ่ายภาพและเก็บข้อมูลยูนิตตามวันเวลาที่คุณสะดวก</p></div>
+        <div class="step"><h3>ลงประกาศ</h3><p>เขียนรายละเอียดและลงประกาศในช่องทางที่เข้าถึงผู้ซื้อได้มากที่สุด</p></div>
+        <div class="step"><h3>ปิดการขาย</h3><p>คัดกรองผู้สนใจ พาชม ต่อรอง และดูแลเอกสารจนเสร็จ</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Featured Works ===== -->
+  <section>
+    <div class="container">
+      <div class="section-title">
+        <span class="eyebrow">ผลงานของเรา</span>
+        <h2>ตัวอย่างยูนิตที่เราดูแล</h2>
+        <p>ภาพจริงจากงานถ่ายภาพและลงประกาศของทีม Merit Property</p>
+      </div>
+      <div class="grid">
+        <div class="work">
+          <div class="work-img"><img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800" alt="คอนโดสุขุมวิท" loading="lazy" /><span class="tag">ขายแล้ว</span></div>
+          <div class="work-body"><h3>[ชื่อโครงการ 1]</h3><div class="loc">📍 สุขุมวิท</div><div class="meta"><span>🛏 1 ห้องนอน</span><span>📐 [XX] ตร.ม.</span></div></div>
         </div>
-        <div class="form-row">
-          <div class="form-group">
-            <label for="email">อีเมล <span class="req">*</span></label>
-            <input type="email" id="email" name="อีเมล" required />
-          </div>
-          <div class="form-group">
-            <label for="phone">เบอร์โทรศัพท์ <span class="req">*</span></label>
-            <input type="tel" id="phone" name="เบอร์โทรศัพท์" pattern="[0-9\-\s]{9,12}" placeholder="08X-XXX-XXXX" required />
-          </div>
+        <div class="work">
+          <div class="work-img"><img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800" alt="คอนโดอโศก" loading="lazy" /><span class="tag">ปล่อยเช่าแล้ว</span></div>
+          <div class="work-body"><h3>[ชื่อโครงการ 2]</h3><div class="loc">📍 อโศก</div><div class="meta"><span>🛏 2 ห้องนอน</span><span>📐 [XX] ตร.ม.</span></div></div>
         </div>
-        <div class="form-row">
-          <div class="form-group">
-            <label for="ptype">ประเภททรัพย์สินที่ต้องการขาย <span class="req">*</span></label>
-            <select id="ptype" name="ประเภททรัพย์สิน" required>
-              <option value="">-- เลือกประเภท --</option>
-              <option>คอนโดมิเนียม</option>
-              <option>บ้านเดี่ยว</option>
-              <option>ทาวน์โฮม / ทาวน์เฮาส์</option>
-              <option>อาคารพาณิชย์</option>
-              <option>ที่ดิน</option>
-              <option>อื่น ๆ</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label for="location">ทำเลที่ตั้งของทรัพย์สิน <span class="req">*</span></label>
-            <input type="text" id="location" name="ทำเลที่ตั้ง" placeholder="เช่น สุขุมวิท 24, อโศก" required />
-          </div>
+        <div class="work">
+          <div class="work-img"><img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800" alt="บ้านพระราม 3" loading="lazy" /><span class="tag">ขายแล้ว</span></div>
+          <div class="work-body"><h3>[ชื่อโครงการ 3]</h3><div class="loc">📍 พระราม 3</div><div class="meta"><span>🛏 3 ห้องนอน</span><span>📐 [XX] ตร.ม.</span></div></div>
         </div>
-        <div class="form-group">
-          <label for="message">รายละเอียดเพิ่มเติม</label>
-          <textarea id="message" name="รายละเอียดเพิ่มเติม" rows="5" placeholder="เช่น ชื่อโครงการ ขนาดห้อง ชั้น ราคาที่ต้องการ"></textarea>
-        </div>
-        <!-- กันสแปม (ห้ามลบ) -->
-        <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off" />
-        <button type="submit" class="btn btn-primary" style="width:100%">ส่งข้อความ</button>
-        <p class="form-note">เราตอบกลับภายในวันทำการ (จันทร์–เสาร์) ข้อมูลของคุณจะถูกเก็บเป็นความลับ</p>
-        <div class="form-msg" id="formMsg"></div>
-      </form>
+      </div>
+      <div class="center"><a href="portfolio.html" class="btn btn-outline">ดูผลงานทั้งหมด</a></div>
     </div>
   </section>
 
@@ -250,60 +282,25 @@
       <h2>ครอบคลุม 12 ทำเลหลักทั่วกรุงเทพฯ</h2>
       <p>เราดูแลประกาศขายและเช่าอสังหาฯ ในทำเลสำคัญของกรุงเทพฯ ตั้งแต่สุขุมวิท อโศก จนถึงพระราม 3 ทุกยูนิตถ่ายภาพและลงรายละเอียดครบ</p>
       <div class="chips">
-        <span class="chip main">สุขุมวิท</span>
-        <span class="chip main">อโศก</span>
-        <span class="chip main">พระราม 3</span>
-        <span class="chip main">พระราม 4</span>
-        <span class="chip">สีลม</span>
-        <span class="chip">พหล-อารีย์</span>
-        <span class="chip">เอกมัย</span>
-        <span class="chip">อ่อนนุช</span>
-        <span class="chip">เพชรบุรี</span>
-        <span class="chip">รัชดาภิเษก</span>
-        <span class="chip">พระราม9</span>
-        <span class="chip">สาทร-ตากสิน</span>
+        <span class="chip main">สุขุมวิท</span><span class="chip main">อโศก</span><span class="chip main">พระราม 3</span>
+        <span class="chip">[ทำเล 4]</span><span class="chip">[ทำเล 5]</span><span class="chip">[ทำเล 6]</span>
+        <span class="chip">[ทำเล 7]</span><span class="chip">[ทำเล 8]</span><span class="chip">[ทำเล 9]</span>
+        <span class="chip">[ทำเล 10]</span><span class="chip">[ทำเล 11]</span><span class="chip">[ทำเล 12]</span>
       </div>
-      <a href="services.html" class="btn btn-outline">ดูบริการของเรา</a>
     </div>
   </section>
 
-  <!-- ===== FAQ ===== -->
-  <section id="faq">
-    <div class="container faq-wrap">
-      <div class="faq-intro">
-        <span class="eyebrow">คำถามที่พบบ่อย</span>
-        <h2>ติดต่อเรามีคำถามอะไรก่อนเริ่มไหม?</h2>
-        <p>ตอบข้อสงสัยก่อนตัดสินใจติดต่อเรา หากมีคำถามเพิ่มเติมทักมาได้เลย</p>
-        <div class="info-item"><div class="ic">📞</div><div><small>โทร</small><a class="js-tel"><span class="js-phone"></span></a></div></div>
-        <div class="info-item"><div class="ic">✉️</div><div><small>อีเมล</small><a class="js-mail"><span class="js-email"></span></a></div></div>
+  <!-- ===== Testimonials (ใส่รีวิวจริง) ===== -->
+  <section>
+    <div class="container">
+      <div class="section-title">
+        <span class="eyebrow">เสียงจากลูกค้า</span>
+        <h2>ลูกค้าพูดถึงเราอย่างไร</h2>
       </div>
-
-      <!-- คำตอบด้านล่างเป็นร่าง กรุณาแก้ให้ตรงกับบริการจริง -->
-      <div class="faq-list">
-        <details>
-          <summary>ถ่ายภาพและลงประกาศใช้เวลานานแค่ไหน?</summary>
-          <div class="answer">หลังนัดหมาย ทีมงานจะเข้าถ่ายภาพตามวันเวลาที่สะดวก และลงประกาศได้ภายใน [X] วันทำการหลังถ่ายภาพเสร็จ</div>
-        </details>
-        <details>
-          <summary>ต้องเตรียมเอกสารอะไรก่อนติดต่อบ้าง?</summary>
-          <div class="answer">เริ่มต้นแค่ข้อมูลพื้นฐาน เช่น ชื่อโครงการ ขนาด ชั้น และราคาที่ต้องการ ส่วนเอกสารสิทธิ์ (โฉนด/หนังสือกรรมสิทธิ์ห้องชุด) และบัตรประชาชนเจ้าของ เตรียมไว้ในขั้นตอนถัดไปได้</div>
-        </details>
-        <details>
-          <summary>ค่าใช้จ่ายในการเริ่มบริการคิดอย่างไร?</summary>
-          <div class="answer">[อธิบายโครงสร้างค่าบริการ เช่น ไม่มีค่าใช้จ่ายล่วงหน้า / คิดค่าคอมมิชชั่นเมื่อขายได้ X%] สอบถามรายละเอียดได้ทางโทรศัพท์หรือไลน์</div>
-        </details>
-        <details>
-          <summary>ประกาศของฉันจะเห็นผู้ซื้อกลุ่มไหนบ้าง?</summary>
-          <div class="answer">[ระบุช่องทางลงประกาศ เช่น เว็บไซต์อสังหาฯ ชั้นนำ โซเชียลมีเดีย และเครือข่ายเอเจนต์] เพื่อเข้าถึงทั้งผู้ซื้ออยู่เองและนักลงทุน</div>
-        </details>
-        <details>
-          <summary>ช่วยขายบ้านหรือคอนโดทุกทำเลในกรุงเทพฯ ไหม?</summary>
-          <div class="answer">เราเน้นดูแล 12 ทำเลหลักทั่วกรุงเทพฯ ตั้งแต่สุขุมวิท อโศก จนถึงพระราม 3 หากทรัพย์ของคุณอยู่นอกพื้นที่ ทักมาสอบถามได้ก่อน</div>
-        </details>
-        <details>
-          <summary>ถ่ายภาพแล้วไม่พอใจผลลัพธ์ทำยังไงได้บ้าง?</summary>
-          <div class="answer">[ระบุเงื่อนไข เช่น แจ้งทีมงานเพื่อปรับแก้หรือนัดถ่ายใหม่ได้ภายใน x วัน]</div>
-        </details>
+      <div class="grid">
+        <div class="quote"><p>"[รีวิวจากลูกค้าจริง เช่น ภาพสวยมาก ประกาศลงไม่นานก็มีคนติดต่อเข้ามา]"</p><b>[ชื่อลูกค้า]</b><small>เจ้าของคอนโด [ทำเล]</small></div>
+        <div class="quote"><p>"[รีวิวจากลูกค้าจริง]"</p><b>[ชื่อลูกค้า]</b><small>เจ้าของบ้าน [ทำเล]</small></div>
+        <div class="quote"><p>"[รีวิวจากลูกค้าจริง]"</p><b>[ชื่อลูกค้า]</b><small>เจ้าของคอนโด [ทำเล]</small></div>
       </div>
     </div>
   </section>
@@ -315,12 +312,11 @@
       <p>โทรคุยกับเราก่อนก็ได้ ไม่มีข้อผูกมัด บอกเป้าหมายของคุณ แล้วเราจะดูแลขั้นตอนต่อจากนั้นให้</p>
       <div class="hero-buttons">
         <a class="btn btn-primary js-tel">โทร <span class="js-phone"></span></a>
-        <a class="btn btn-light js-mail">ส่งอีเมล <span class="js-email"></span></a>
+        <a class="btn btn-light js-line" target="_blank" rel="noopener">แอดไลน์</a>
       </div>
     </div>
   </section>
 
-  <!-- ===== Footer ===== -->
   <footer>
     <div class="container">
       <div class="footer-grid">
@@ -330,7 +326,7 @@
         </div>
         <div>
           <h4>Address</h4>
-          <p>Ocean Tower , Khlong Toei, กรุงเทพฯ</p>
+          <p>Ratphatthana 20, Saphan Sung, กรุงเทพฯ</p>
           <p>จันทร์–เสาร์ 9:00 – 18:00 น.</p>
         </div>
         <div>
@@ -338,7 +334,8 @@
           <ul>
             <li><a class="js-tel"><span class="js-phone"></span></a></li>
             <li><a class="js-mail"><span class="js-email"></span></a></li>
-            <li><a class="js-line" target="_blank" rel="noopener">LINE: lin.ee/SQP7rFWI</a></li>
+            <li><a class="js-line" target="_blank" rel="noopener">LINE:lin.ee/oB7vuTF </a></li>
+            <a href="https://lin.ee/oB7vuTF"><img src="https://scdn.line-apps.com/n/line_add_friends/btn/th.png" alt="เพิ่มเพื่อน" height="36" border="0"></a>
           </ul>
         </div>
         <div>
@@ -354,74 +351,16 @@
       </div>
       <div class="footer-bottom">
         <span>© <span id="year"></span> Merit Property. สงวนลิขสิทธิ์.</span>
-        <div class="links">
-          <a href="privacy.html">นโยบายความเป็นส่วนตัว</a>
-          <a href="terms.html">ข้อกำหนดการใช้งาน</a>
-        </div>
+        <div class="links"><a href="privacy.html">นโยบายความเป็นส่วนตัว</a><a href="terms.html">ข้อกำหนดการใช้งาน</a></div>
       </div>
     </div>
   </footer>
 
-  <!-- ===== Floating Buttons ===== -->
   <div class="float-btns">
     <a class="float-line js-line" target="_blank" rel="noopener" aria-label="LINE">LINE</a>
     <a class="float-call js-tel" aria-label="โทร">📞</a>
   </div>
 
-  <script>
-    // ======================================================
-    //  แก้ข้อมูลติดต่อที่นี่ที่เดียว แล้วจะแสดงทุกจุดในหน้า
-    //  (เมนูบน, ส่วนติดต่อ, FAQ, ปุ่มด้านล่าง, footer, ปุ่มลอย)
-    // ======================================================
-    const CONFIG = {
-      phone: "0892029776",                  // ← ใส่เบอร์โทร 10 หลัก เช่น "081-234-5678"
-      email: "kachen_8328@hotmail.com",       // ← ใส่อีเมลจริง (ใช้อีเมลเดียวทั้งเว็บ)
-      line:  "",       // ลิงก์ LINE (จากเว็บเดิม)
-      formEndpoint: "https://formspree.io/f/YOUR_FORM_ID" // สมัครฟรีที่ formspree.io
-    };
-
-    const telLink = "tel:" + CONFIG.phone.replace(/[^0-9+]/g, "");
-    document.querySelectorAll(".js-phone").forEach(el => el.textContent = CONFIG.phone);
-    document.querySelectorAll(".js-email").forEach(el => el.textContent = CONFIG.email);
-    document.querySelectorAll(".js-tel").forEach(el => el.href = telLink);
-    document.querySelectorAll(".js-mail").forEach(el => el.href = "mailto:" + CONFIG.email);
-    document.querySelectorAll(".js-line").forEach(el => el.href = CONFIG.line);
-    document.getElementById("year").textContent = new Date().getFullYear();
-
-    // เมนูมือถือ
-    const navLinks = document.getElementById("navLinks");
-    document.getElementById("menuToggle").addEventListener("click", () => navLinks.classList.toggle("show"));
-
-    // FAQ: เปิดได้ทีละข้อ
-    document.querySelectorAll(".faq-list details").forEach(d => {
-      d.addEventListener("toggle", () => {
-        if (d.open) document.querySelectorAll(".faq-list details").forEach(o => { if (o !== d) o.open = false; });
-      });
-    });
-
-    // ส่งฟอร์ม
-    const form = document.getElementById("contactForm");
-    const msg = document.getElementById("formMsg");
-    form.addEventListener("submit", async (e) => {
-      e.preventDefault();
-      const btn = form.querySelector("button");
-      msg.className = "form-msg";
-      btn.disabled = true; btn.textContent = "กำลังส่ง...";
-      try {
-        const res = await fetch(CONFIG.formEndpoint, {
-          method: "POST", body: new FormData(form), headers: { Accept: "application/json" }
-        });
-        if (!res.ok) throw new Error();
-        msg.textContent = "ส่งข้อความเรียบร้อย ขอบคุณครับ ทีมงานจะติดต่อกลับภายในวันทำการ";
-        msg.classList.add("success");
-        form.reset();
-      } catch {
-        msg.textContent = "ส่งไม่สำเร็จ กรุณาลองใหม่ หรือติดต่อทางไลน์ / โทรศัพท์";
-        msg.classList.add("error");
-      } finally {
-        btn.disabled = false; btn.textContent = "ส่งข้อความ";
-      }
-    });
-  </script>
+  <script src="main.js"></script>
 </body>
 </html>
